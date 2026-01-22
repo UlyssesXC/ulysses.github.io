@@ -1,6 +1,6 @@
 ## Hi, I'm Xiangchao (Chase) Chen
 
-I am a graduated M.Eng. student in **Electrical & Computer Engineering** from **Western University**, currently working as an Research Intern at the **University of Waterloo**. 
+I am a graduated M.Eng. student in **Electrical & Computer Engineering** from **Western University**, currently working as an **Research Intern** at the **University of Waterloo**. 
 
 I've been particularly interested in **agents** and **embodied AI**.
 

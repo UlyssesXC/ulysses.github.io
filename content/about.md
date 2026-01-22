@@ -4,7 +4,7 @@ I am a graduated M.Eng. student in **Electrical & Computer Engineering** from **
 
 I've been particularly interested in **agents** and **embodied AI**.
 
-I look forward to all communications and collaborations! ⭐️
+**I look forward to all communications and collaborations!** ⭐️
 <!-- I believe: Next leap in Embodied AI = Grounded Vision-Language Models & Multimodal Perception + Rigorous Systems Engineering + HW/SW Co-designed Acceleration. -->
 <!-- ## Quick Facts -->
 <!-- Communication-robotics & Linux/embedded-systems engineer pivoting to AI-driven embodied intelligence. -->

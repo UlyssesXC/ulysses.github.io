@@ -31,7 +31,7 @@ function setupSocialLinks() {
     emailLink.addEventListener('click', async (event) => {
         event.preventDefault();
         const email = config.social.email;
-        const message = '已复制邮箱';
+        const message = 'Email address copied to clipboard :)';
 
         try {
             if (navigator.clipboard && navigator.clipboard.writeText) {

@@ -27,6 +27,48 @@ function setupSocialLinks() {
     emailLink.href = `mailto:${config.social.email}`;
     linkedinLink.href = config.social.linkedin;
     resumeLink.href = config.social.resume;
+
+    emailLink.addEventListener('click', async (event) => {
+        event.preventDefault();
+        const email = config.social.email;
+        const message = '已复制邮箱';
+
+        try {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(email);
+            } else {
+                const textarea = document.createElement('textarea');
+                textarea.value = email;
+                textarea.setAttribute('readonly', '');
+                textarea.style.position = 'absolute';
+                textarea.style.left = '-9999px';
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+            }
+        } catch (error) {
+            console.error('Email copy failed:', error);
+        }
+
+        const existingToast = emailLink.querySelector('.email-toast');
+        if (existingToast) {
+            existingToast.remove();
+        }
+
+        const toast = document.createElement('span');
+        toast.className = 'email-toast show';
+        toast.textContent = message;
+        emailLink.appendChild(toast);
+
+        setTimeout(() => {
+            toast.classList.add('fade-out');
+        }, 100);
+
+        setTimeout(() => {
+            toast.remove();
+        }, 1100);
+    });
 }
 
 // 加载markdown内容

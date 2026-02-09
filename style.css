@@ -101,6 +101,7 @@ body {
     border-radius: 8px;
     transition: all 0.3s ease;
     background-color: rgba(0, 0, 0, 0.05);
+    position: relative;
 }
 
 .social-link:hover {
@@ -110,6 +111,31 @@ body {
 
 .social-link svg {
     flex-shrink: 0;
+}
+
+.email-toast {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(10px, -50%);
+    background: #2c3e50;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.email-toast.show {
+    opacity: 1;
+}
+
+.email-toast.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
 /* Nyan Cat样式 */

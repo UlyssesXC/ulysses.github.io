@@ -67,7 +67,7 @@ function setupSocialLinks() {
 
         setTimeout(() => {
             toast.remove();
-        }, 1100);
+        }, 2100);
     });
 }
 

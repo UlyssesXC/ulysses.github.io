@@ -11,7 +11,8 @@ const config = {
         github: 'https://github.com/UlyssesXC/',
         scholar: 'https://scholar.google.com/citations?user=W8PoP8MAAAAJ',
         email: 'chasechen98@gmail.com',
-        linkedin: 'https://www.linkedin.com/in/xiangchao-chen-0b1997286/'
+        linkedin: 'https://www.linkedin.com/in/xiangchao-chen-0b1997286/',
+        resume: 'content/Chen%20Xiangchao%20CV%20in%20UW.pdf'
     },
 
     // Content file paths

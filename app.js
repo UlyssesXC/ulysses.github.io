@@ -20,11 +20,13 @@ function setupSocialLinks() {
     const scholarLink = document.getElementById('scholar-link');
     const emailLink = document.getElementById('email-link');
     const linkedinLink = document.getElementById('linkedin-link');
+    const resumeLink = document.getElementById('resume-link');
 
     githubLink.href = config.social.github;
     scholarLink.href = config.social.scholar;
     emailLink.href = `mailto:${config.social.email}`;
     linkedinLink.href = config.social.linkedin;
+    resumeLink.href = config.social.resume;
 }
 
 // 加载markdown内容
